@@ -1,0 +1,28 @@
+
+ .nav-link:hover{
+     color: map-get($colores, Color3);
+}
+
+nav{
+      padding: 5.625rem;
+     display: flex;
+      justify-content: space-between;
+      max-width: 61.25rem;
+      margin: 0 auto;
+  }img{
+     height: 3.125rem;
+  }.menu{
+      flex-direction: column;
+      position: fixed;
+      left: 0px;
+     top:0px;
+      width: 100%;
+     align-items: center;    
+      overflow-y: auto;
+     display: flex;
+    list-style: none;
+     margin: 0px;
+      padding: 0px;
+}li{
+padding: 0 .9375rem;
+}

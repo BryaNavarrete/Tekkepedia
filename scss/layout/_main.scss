@@ -1,0 +1,308 @@
+body{
+    font-family: 'Kanit', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.fondo{
+    background-image: url("../assets/img/imagenMain.jpg") ;
+    height: 31.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: map-get($colores, Color5);
+    @include flex(column, center, center, 0px);
+}
+
+
+main {
+    background-image: linear-gradient(to bottom, #000000, #280c12, #480a16, #670513, #850505);
+}  
+
+h1{
+    text-align: center;
+    padding: 70px;
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 5px;
+    color: map-get($colores, Color3);
+}
+
+h3{
+    font-family: 'Kanit', sans-serif;
+    text-shadow: 2px 2px 2px black;   
+}
+
+
+@-webkit-keyframes text-focus-in {
+0% {
+-webkit-filter: blur(12px);
+      filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+      filter: blur(0px);
+opacity: 1;
+}
+}
+@keyframes text-focus-in {
+0% {
+-webkit-filter: blur(12px);
+      filter: blur(12px);
+opacity: 0;
+}
+100% {
+-webkit-filter: blur(0px);
+      filter: blur(0px);
+opacity: 1;
+}
+}
+
+
+.section-title h1{
+	font-size:48px;
+	text-transform:uppercase;
+	font-weight:700;
+	margin-bottom:50px;
+}
+
+.section-title h1:before{
+	content: url(../img/title-before.png);
+	display:block;
+	float:left;
+}
+
+@media(max-width:767px) {
+.section-title h1{
+	font-size:32px;
+	text-transform:uppercase;
+	font-weight:700;
+	margin-left:30px;
+}
+}
+
+.general{
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    @include mobile{
+     padding: 1.875rem 1.875rem 0 1.875rem;
+    }
+
+}.general-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.4375rem;
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.25rem;
+    }
+
+}.general-1 {
+    background-image: url(../assets/img/jinHistoria.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 28.125rem;
+    padding: 10.625rem 3.4375rem;
+    @include mobile{
+        height: 21.875rem;
+        padding: 6.25rem;
+        margin-bottom: .625rem
+    }
+}
+
+.general-2{
+    @extend .general-1;
+    background-image: url(../assets/img/kazuyaHistoria.jpg);
+}
+
+.general-3{
+    @extend .general-1;
+    background-image: url(../assets/img/heihachiHistoria.jpg);
+}
+
+.txt h3{
+    font-size: 1.125rem;
+    color: map-get($colores, Color5);
+    text-transform: uppercase;
+    margin-bottom: .625rem
+  }p{
+      color: map-get($colores, Color5);
+      font-size: 1rem;
+  }
+
+  .info-1{
+    padding:  250px 0;
+  }
+  .info-content{
+    text-align: center;
+  }
+  
+  .info-conten h2 span{
+    color: map-get($colores, Color5);
+  }
+
+.info-circle{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.4375rem;
+    @include mobile{
+        flex-direction: column;
+        align-items: center;       
+    }
+}
+
+.circle-txt {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 10px;
+    @include mobile{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+}p{
+    margin-top: 1.5625rem;
+    color: map-get($colores, Color5);
+}
+
+.circle-1 {
+    height: 6.25rem;
+    width: 6.25rem;
+    border: .0625rem solid map-get($colores, Color5);
+    border-radius: 50%;
+    padding-top: 2.1875rem;
+    background-image: url(../assets/img/PaulPortrait.jpg);
+    background-size: cover;    
+}
+
+.circle-2 {
+    @extend .circle-1;
+    background-image: url(../assets/img/NinaPortrait.jpg);
+}
+
+.circle-3 {
+    @extend .circle-1;
+    background-image: url(../assets/img/LawPortrait.jpg);
+}
+
+.circle-4 {
+    @extend .circle-1;
+    background-image: url(../assets/img/BryanPortrait.jpg);
+    background-position: 100%;
+}
+
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+
+.number {
+    padding: 7.5rem 0;
+    position: relative;
+    display: flex;
+}
+
+.contact {
+    padding: 7.5rem 0;
+}.contact-content {
+    text-align: center;
+}
+
+  .comparativemovie-mp4, .comparativeanime-mp4, .launchTrailer-mp4, .djinTrailer-mp4 {
+    text-align: center;
+}
+    .f1, .f2 {
+      width: 21.875rem; 
+      max-width: 800px;
+      display: block;
+      margin: 0 auto; 
+    }
+
+
+   .f3, .f4{
+    width: 37.5rem;
+      max-width: 800px; 
+      display: block;
+      margin: 0 auto;
+      @include mobile {
+        width: 25rem;
+   } 
+   }
+
+   .information {
+    padding: 3.125rem;
+   }.information-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .form{  
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 3.125rem 3.4375rem;
+            box-shadow: 0 0 1.25rem map-get($colores, Color4);
+            text-align: center;
+            width: 21.25rem;
+            @include tablet{
+                padding: 3.125rem 1.875rem;
+                width: 100%;
+            }
+          }.input-group{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+          }label{
+            font-size: .9375rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: map-get($colores, Color4);
+          }
+
+          input, textarea {
+            padding: 1.0625rem 1.5625rem;
+            margin-bottom: 1.25rem;
+            border: 2px solid ;
+            color: map-get($colores, Color4);
+            outline: none;
+            @include tablet{
+                padding: .9375rem
+            }
+          }
+
+input::placeholder, textarea::placeholder {
+    color: map-get($colores, Color3);
+}
+
+.form-txt {
+    margin-bottom:  1.875rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}a{
+    color: map-get($colores, Color1);
+    font-size: .875rem;
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+.btn { 
+    font-size: 1rem;
+    color: map-get($colores, Color5);
+    border: 0;
+    border-radius: 1.5625rem;
+    background-color: map-get($colores, Color1);
+    box-shadow: 0 0 1.25rem map-get($colores, Color4);
+    cursor: pointer;
+}
+

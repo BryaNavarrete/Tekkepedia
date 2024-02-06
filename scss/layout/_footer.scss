@@ -1,0 +1,10 @@
+footer {
+    padding: 100px 0;
+    background-color: map-get($colores, Color4);
+    color:  map-get($colores, Color5);
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+}.twitchIcon{
+    background: none;
+}
